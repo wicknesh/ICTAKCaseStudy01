@@ -1,7 +1,7 @@
 var primVal = 0;
 function prime(arr) {
-    if(arr[0] == 1){
-        console.log(`${arr[0]} is neither prime nor composite`);
+    if(arr[0] == 0 || arr[0] == 1){
+        console.log(`${arr[0]} is neither prime nor composite!`);
         return;
     }
     else if(arr[0] > 1){
@@ -14,5 +14,5 @@ function prime(arr) {
     return primVal?console.log(`${arr[0]} not prime.`) : console.log(`${arr[0]} is prime.`);
 }
 
-let arr = [15, 41, 2, 68];
+let arr = [5, 41, 2, 68];
 prime(arr);
